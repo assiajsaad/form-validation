@@ -1,9 +1,12 @@
-
 body {
     font: 1em sans-serif;
     width: 200px;
     padding: 0;
     margin: 0 auto;
+  }
+  
+  form {
+    max-width: 200px;
   }
   
   form * {
@@ -12,7 +15,6 @@ body {
   
   input {
     appearance: none;
-  
     width: 100%;
     border: 1px solid #333;
     margin: 0;
@@ -24,7 +26,7 @@ body {
   }
   
   /* This is our style for the invalid fields */
-  input:invalid {
+  input.invalid {
     border-color: #900;
     background-color: #fdd;
   }
@@ -42,7 +44,6 @@ body {
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
-  
     box-sizing: border-box;
   }
   
