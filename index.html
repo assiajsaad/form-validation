@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form novalidate>
+      <label for="mail" class="email">
+        <span>Email:</span>
+        <input type="email" name="mail" id="mail" />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="country" class="country">
+        <span>Country:</span>
+        <input type="text" name="country" id="country" />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="zip" class="zip">
+        <span>Zip Code:</span>
+        <input type="text" name="zip" id="zip" />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="password" class="password">
+        <span>Password:</span>
+        <input type="password" name="password" id="password" />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="conf-password" class="conf-password">
+        <span>Confirm Password:</span>
+        <input type="password" name="conf-password" id="conf-password" />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
