@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <label for="mail" class="email">
+    <form novalidate>
+      <label for="email" class="email">
         <span>Email:</span>
-        <input type="email" name="mail" id="mail" />
+        <input type="email" name="email" id="email" />
         <span class="error" aria-live="polite"></span>
       </label>
       <label for="country" class="country">
